@@ -15,17 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 Route::get('/blog',function(){
     return view('blog');
-});
+})->name('blog');
 Route::get('/class',function(){
     return view('class');
-});
+})->name('class');;
 Route::get('/contact',function(){
     return view('contact');
-});
+})->name('contact');;
 Route::get('/detail',function(){
     return view('detail');
-});
+})->name('detail');;
 /* ha 7tithom li bghat t7yd 7ydoha  */

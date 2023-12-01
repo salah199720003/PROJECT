@@ -81,10 +81,10 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="class.html" class="nav-item nav-link">Classes</a>
-                            <a href="team.html" class="nav-item nav-link">Trainers</a>
+                            <a href="{{route('index')}}" class="nav-item nav-link active">Home</a>
+                            <a href="{{route('index')}}" class="nav-item nav-link">About</a>
+                            <a href="{{route('index')}}" class="nav-item nav-link">Classes</a>
+                            <a href="{{route('index')}}" class="nav-item nav-link">Trainers</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
