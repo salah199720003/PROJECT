@@ -25,7 +25,7 @@ Route::get('/class',function(){
 Route::get('/contact',function(){
     return view('contact');
 })->name('contact');;
-Route::get('/detail',function(){
-    return view('detail');
-})->name('detail');;
+Route::get('/about',function(){
+    return view('about');
+})->name('about');;
 /* ha 7tithom li bghat t7yd 7ydoha  */
