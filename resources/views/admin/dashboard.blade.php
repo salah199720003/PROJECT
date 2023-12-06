@@ -5,17 +5,12 @@
     <meta charset="utf-8">
     <title>Admin Dashboard - GYMSTER</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Other stylesheets and meta tags as needed -->
 </head>
 
 <body class="bg-light">
-    <!-- Header Start -->
-    <!-- Your header content here -->
     </header>
-    <!-- Header End -->
 
     <main class="container mt-4">
         <h1 class="mb-4">Admin Tools</h1>
@@ -55,14 +50,9 @@
         </div>
     </main>
 
-    <!-- Footer Start -->
-    <!-- Your footer content here -->
     </footer>
-    <!-- Footer End -->
 
-    <!-- Back to Top Button -->
 
-    <!-- Bootstrap JS (optional, if needed) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

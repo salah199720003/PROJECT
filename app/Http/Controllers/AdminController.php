@@ -31,7 +31,6 @@ class AdminController extends Controller
     public function manageUsers()
     {
         $users = DB::table('users')->simplePaginate(10);
- // You can adjust the number of items per page
 
         return view('admin.manage-users', compact('users'));
     }
@@ -82,7 +81,7 @@ class AdminController extends Controller
         'password' => 'required|string|min:8',
     ]);
 
-    $data['password'] = bcrypt($data['password']); // Hash the password
+    $data['password'] = bcrypt($data['password']); 
 
     User::create($data);
 
@@ -95,7 +94,6 @@ public function exportReservations()
         ->select('reservations.id', 'reservations.date', 'reservations.id_user', 'users.name as user_name', 'users.email as user_email')
         ->get();
 
-    // Logic for exporting reservations (e.g., CSV, Excel, etc.)
     $csvFileName = 'reservations_export.csv';
     $headers = array(
         "Content-type"        => "text/csv",
@@ -107,10 +105,8 @@ public function exportReservations()
 
     $handle = fopen('php://output', 'w');
 
-    // Add CSV header
     fputcsv($handle, ['ID', 'Date', 'User ID', 'User Name', 'User Email']);
 
-    // Add CSV rows
     foreach ($reservations as $reservation) {
         fputcsv($handle, [$reservation->id, $reservation->date, $reservation->id_user, $reservation->user_name, $reservation->user_email]);
     }
@@ -125,7 +121,6 @@ public function getRegisteredUsersCount()
     return $registeredUsersCount;
 }
 
-// Existing method to get the count of reservations
 public function getReservationsCount()
 {
     $reservationsCount = DB::table('reservations')->count();

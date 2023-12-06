@@ -32,13 +32,11 @@
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" name="password" required>
     </div>
-    <!-- Add more fields as needed -->
 
     <button type="submit" class="btn btn-primary">Add User</button>
 </form>
     </div>
 
-    <!-- Bootstrap JS (optional, if needed) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

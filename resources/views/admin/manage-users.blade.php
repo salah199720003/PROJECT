@@ -1,4 +1,3 @@
-<!-- resources/views/admin/manage-users.blade.php -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +5,6 @@
 <head>
     <meta charset="utf-8">
     <title>Manage Users - GYMSTER</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -43,7 +41,6 @@
                         @csrf
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
-                            <!-- Add more buttons as needed -->
                         </td>
                     </tr>
                 @endforeach
@@ -52,7 +49,6 @@
        <div> {{ $users->links() }}
     </div>
 
-    <!-- Bootstrap JS (optional, if needed) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
    
